@@ -1,0 +1,51 @@
+
+
+.nav{
+	position: fixed;
+	max-width: 750px;
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	background: #fff;
+	border-top: 1px solid #a3a7a7;
+}
+.nav a{
+	display: inline-block;
+	width: 23%;
+	text-align: center;
+	text-decoration: none;
+	color: #999;
+
+}
+.nav a span{
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	
+}
+
+.nav a span.nav_ico1{background: url(../img/job.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2{background: url(../img/com.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3{background: url(../img/news.png) no-repeat center;background-size: 90%;}
+.nav a span.nav_ico4{background: url(../img/my.png) no-repeat center;background-size: 90%;}
+
+.nav a span.nav_ico1:hover{background: url(../img/job2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2:hover{background: url(../img/coms.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3:hover{background: url(../img/news2.png) no-repeat center;background-size: 90%;}
+.nav a span.nav_ico4:hover{background: url(../img/my2.png) no-repeat center;background-size: 90%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
