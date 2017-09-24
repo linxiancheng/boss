@@ -1,0 +1,222 @@
+body{font-family: "微软雅黑";background: #e9efef;}
+
+
+/*头部*/
+.head{
+	width: 10rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #53cac3;
+}
+.head_top{
+	height: 1.2rem;
+}
+.head_left{
+	padding-left: 0.4rem;
+	color: #fff;
+	line-height: 1.2rem;
+	font-size: 0.4rem;
+}
+.head_right{
+	height: 1.2rem;
+	padding: 3%;
+	box-sizing: border-box;
+	width: 2.3rem;
+}
+.head_right span{
+	display: inline-block;
+	width: 0.53rem;
+	height:0.53rem;
+	position: relative;
+	margin-right:0.26rem; 
+	float: left;
+}
+.head_right span:before{
+	content: '';
+	display: block;
+	border-right: 2px solid #fff;
+	height: 0.61rem;
+	position: absolute;
+	left: -0.2rem;
+	top: 0;
+}
+.head_right span:nth-child(1):before{
+	content: '';
+	display: block;
+	border-right: none;
+	height: 0.61rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.head_right .jia{
+	background: url(../img/ico_jia.png) no-repeat;
+	background-size: contain;
+}	
+
+.head_right .ico_ss{
+	background: url(../img/ico-ss.png) no-repeat;
+	background-size: contain;
+}
+
+.head_bot{
+	display: flex;
+	align-items: center;
+	height: 1.17rem;
+	background: #fff;
+	position: relative;
+}
+.head_bot .flex{
+	text-align: center;
+	flex: 1;
+	color: #777;
+	font-size: 0.26rem;
+}
+.head_bot .cur, .head_bot .cur span{
+	color: #53cac3;
+}
+.head_bot .flex span{
+	transform: rotate(90deg);
+	display: inline-block;
+	margin: 0.06rem;
+}
+
+
+.job_box{
+	height: 10rem;
+	background: rgba(0,0,0,.3);
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+.job_box_top{
+	width: 100%;
+	background: #f8f8f8;
+	padding: 0.2rem 0.46rem 1.8rem 0.46rem;
+	height: 100%;
+	overflow:auto;
+}
+.job_top_box {
+	margin-top:  0.2rem;
+}
+.job_box_top h3{
+	color: #777;
+	font-weight: 400;
+	font-size: 0.32rem;
+}
+.job_top_boxs a{
+	/*width: 2rem;*/
+	padding: 0 0.5rem;
+	height: 0.8rem;
+	display: inline-block;
+	font-size: 0.26rem;
+	background: #fff;
+	text-align: center;
+	line-height: 0.8rem;
+	border-radius: 0.2rem;
+	border: 1px solid #ccc;
+	color: #797979;
+	margin: 0.38rem 0.38rem 0 0;
+}
+
+
+.job_top_boxs .cur{
+	color:#53cac3;
+}
+
+
+.job_box_bot{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 1.06rem;
+	background: #ccc;
+	width: 100%;
+	display: flex;
+	align-items:center;
+}
+.job_box_bot a{
+	text-align: center;
+	height: 1.06rem;
+	flex: 1;
+	line-height: 1.06rem;
+	background: #fff;
+	font-size: 0.4rem;
+}
+.job_box_bot a:nth-child(2){
+	background: #53cac3;
+	color: #fff;
+}
+
+/*底部导航*/
+.nav{position: fixed;z-index: 99;padding-top: 0.13rem; max-width: 10rem;width:10rem;height:1.33rem;margin: 0 auto;background: #fff;border-top: 1px solid #a3a7a7;bottom: 0;left: 50%;transform: translateX(-50%);}
+.nav a{display: inline-block;width:2.49rem;font-size: 0.24rem;box-sizing: border-box;float: left; text-align: center;text-decoration: none;color: #999;}
+.nav a span{display: block;margin: 0 auto;width: 0.90rem;height:0.70rem;}
+
+.nav a span.nav_ico1{background: url(../img/job.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2{background: url(../img/com.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3{background: url(../img/news.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico4{background: url(../img/my.png) no-repeat center;background-size: contain;}
+
+.nav a span.nav_ico1:hover{background: url(../img/job2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2:hover{background: url(../img/coms.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3:hover{background: url(../img/news2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico4:hover{background: url(../img/my2.png) no-repeat center;background-size: contain;}
+
+
+/*内容*/
+.body{width: 10rem;padding:2.36rem 0 1.4rem 0; }
+
+/*职位*/
+.pro{padding:0.37rem;margin: 0.24rem;background: #fff;overflow: hidden;}
+.pro a{display: block;position: relative;line-height: 0.51rem; }
+.pro a h3{font-size: 0.4rem;}
+.pro a h3 span{color: #fd887d;font-size: 0.4rem;}
+.pro a p{font-size: 0.4rem;}
+.pro a p.z-20{font-size: 0.32rem;}
+.pro_ren{
+	border-top:1px solid #ccc;
+	margin-top:0.06rem;
+	padding: 0.06rem;	
+}
+
+.pro_ren .pro_ren_l{
+	padding-top: 0.06rem;
+	position: relative;
+}
+.pro_ren .pro_ren_l img {
+	display: inline-block;
+	vertical-align: middle;
+	height: 0.62rem;
+	width: 0.62rem;
+	border-radius: 50%;
+	/*overflow: hidden;*/
+	
+}
+.pro_ren .pro_ren_l:before{
+	content: '';
+	position: absolute;
+	display: block;
+	right: -0.06rem;
+	bottom: -0.06rem;
+	width: 0.26rem;
+	height: 0.26rem;
+	border-radius: 50%;
+	/*overflow: hidden;*/
+	background: url(../img/vip.png) no-repeat;
+}
+.pro_ren .pro_ren_r {
+	display: inline-block;
+	color: #ccc;
+	margin-left:  0.46rem; 
+	font-size: 0.4rem;
+}
+.pro_ren .pro_ren_r span{
+	color: #53cac3;
+	line-height: 0.62rem;
+}
+/*/职位*/

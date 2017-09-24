@@ -1,0 +1,67 @@
+
+body{font-family: "微软雅黑";background: #e9efef;}
+.head{width: 10rem;margin: 0 auto; position: fixed;top: 0;left: 0;z-index: 99;}
+.head_top{position: relative;height: 1.2rem;background: #53cac3;}
+.head h3{text-align: center;line-height: 1.2rem; color: #fff;font-size: 0.4rem;}
+.head_top span{position: absolute; width: 0.50rem;height:0.50rem;right:0.69rem;top: 50%;transform: translateY(-50%);background: url(../img/ico-ss.png) no-repeat;background-size: contain;}
+.head_bot{height: 1.16rem;background: #fff;position: relative;}
+.head_bot .head_bot_box{width: 3.33rem;height: 1.16rem;text-align: center;line-height: 1.16rem;float: left;}
+.head_bot .head_bot_box div{color: #797979; position: relative;font-size: 0.26rem;}
+.head_bot .head_bot_box div:before{height: 30px; border-right: 1px solid #ccc;position: absolute;left: 0;top: 50%;transform: translateY(-50%);content: '';}
+.head_bot .head_bot_box:nth-child(1) div:before{height: 0; border-right: 1px solid #ccc;position: absolute;left: 0;top: 50%;transform: translateY(-50%);content: '';}
+.head_bot .head_bot_box span{transform: rotate(90deg);display: inline-block;color: #797979;margin: 0.06rem;}
+
+.head_box{height: 10.06rem; position: absolute;top:1.15rem;left: 0;width: 10rem;background: rgba(0,0,0,.4); display: none;}
+.head_box_top{width: 10rem;height: 4.86rem;background: #f8f8f8;}
+.head_box_top a{display: inline-block;font-size: 0.32rem; width: 2rem;height: 0.8rem;border:1px solid #ccc;border-radius: 0.13rem;float: left; line-height: 0.8rem;text-align: center; margin: 0.38rem 0 0 0.38rem; background: #fff;color: #797979;}
+.head_box_bot{width: 10rem;height: 1.08rem; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background: #f8f8f8;}
+.head_box_bot a{width: 5rem; font-size: 0.4rem;height: 1.06rem;display: inline-block;background: #fff; text-align: center;line-height: 1.06rem;float: left;color: #797979;}
+.head_bot .cur{color: #fff;background: #53cac3;}
+.head_bot .head_bot_box .curs,
+.head_bot .head_bot_box .curs span{color:#53cac3;}
+
+
+.body{width: 10rem;padding:2.36rem 0 1.4rem 0; }
+
+.banner{width: 10rem;}
+.banner a{display: inline-block; width: 100%;}
+.banner a img{width: 100%; vertical-align: middle;border: 0;}
+
+/*公司介绍栏目*/
+.pro{padding:0.37rem;margin: 0.24rem;background: #fff;overflow: hidden;}
+.pro_left{float: left; width: 1.6rem; height: 1.6rem; border-radius: 5px;overflow: hidden;}
+.pro_left img{width: 100%;vertical-align: middle;}
+.pro_right{float: left;margin-left:0.37rem;line-height: 0.51rem; }
+.pro_right h3{color: #444;font-weight: 400;font-size: 0.4rem;}
+.pro_right p{color: #777;font-size: 0.32rem;}
+.pro_a{margin-left:2rem;font-size:  0.26rem;width: 7rem;position: relative; border-top: 1px solid #ccc; color: #aaa; display: inline-block; line-height: 0.51rem;}
+.pro_a .tr{position: absolute;right: 0;top: 50%;transform: translateY(-50%);color: #aaa;} 
+
+/*底部导航*/
+.nav{position: fixed;z-index: 99;padding-top: 0.13rem; max-width: 10rem;width:10rem;height:1.33rem;margin: 0 auto;background: #fff;border-top: 1px solid #a3a7a7;bottom: 0;left: 50%;transform: translateX(-50%);}
+.nav a{display: inline-block;width:2.49rem;font-size: 0.24rem;box-sizing: border-box;float: left; text-align: center;text-decoration: none;color: #999;}
+.nav a span{display: block;margin: 0 auto;width: 0.90rem;height:0.70rem;}
+
+.nav a span.nav_ico1{background: url(../img/job.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2{background: url(../img/com.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3{background: url(../img/news.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico4{background: url(../img/my.png) no-repeat center;background-size: contain;}
+
+.nav a span.nav_ico1:hover{background: url(../img/job2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2:hover{background: url(../img/coms.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3:hover{background: url(../img/news2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico4:hover{background: url(../img/my2.png) no-repeat center;background-size: contain;}
+
+
+
+
+
+
+
+
+
+
+
+.color1{color:#53cac3; padding:0 0.06rem;}
+
+
