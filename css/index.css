@@ -83,14 +83,15 @@ body{font-family: "微软雅黑";background: #e9efef;}
 	margin: 0.06rem;
 }
 
-
+.job_box_box{
+	display: none;
+}
 .job_box{
 	height: 10rem;
 	background: rgba(0,0,0,.3);
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	display: none;
 }
 
 .job_box_top{
@@ -109,7 +110,6 @@ body{font-family: "微软雅黑";background: #e9efef;}
 	font-size: 0.32rem;
 }
 .job_top_boxs a{
-	/*width: 2rem;*/
 	padding: 0 0.5rem;
 	height: 0.8rem;
 	display: inline-block;
@@ -120,7 +120,7 @@ body{font-family: "微软雅黑";background: #e9efef;}
 	border-radius: 0.2rem;
 	border: 1px solid #ccc;
 	color: #797979;
-	margin: 0.38rem 0.38rem 0 0;
+	margin: 0.38rem 0.08rem 0 0;
 }
 
 
@@ -155,7 +155,9 @@ body{font-family: "微软雅黑";background: #e9efef;}
 /*底部导航*/
 .nav{position: fixed;z-index: 99;padding-top: 0.13rem; max-width: 10rem;width:10rem;height:1.33rem;margin: 0 auto;background: #fff;border-top: 1px solid #a3a7a7;bottom: 0;left: 50%;transform: translateX(-50%);}
 .nav a{display: inline-block;width:2.49rem;font-size: 0.24rem;box-sizing: border-box;float: left; text-align: center;text-decoration: none;color: #999;}
-.nav a span{display: block;margin: 0 auto;width: 0.90rem;height:0.70rem;}
+.nav a span{display: block;margin: 0 auto;width: 0.90rem;height:0.70rem; position: relative;}
+
+.nav a span.cur:before{content: ''; position: absolute;width: 0.2rem;height: 0.2rem;right: 0.06rem;;top: -0.06rem;border-radius: 50%;background: red;}
 
 .nav a span.nav_ico1{background: url(../img/job.png) no-repeat center;background-size: contain;}
 .nav a span.nav_ico2{background: url(../img/com.png) no-repeat center;background-size: contain;}
