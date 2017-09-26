@@ -1,0 +1,302 @@
+ body{
+     font-family: "微软雅黑";
+     background: #e9efef;
+}
+/*底部导航*/
+ .nav{
+     position: fixed;
+     z-index: 99;
+     padding-top: 0.13rem;
+     max-width: 10rem;
+     width:10rem;
+     height:1.33rem;
+     margin: 0 auto;
+     background: #fff;
+     border-top: 1px solid #a3a7a7;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+}
+ .nav a{
+     display: inline-block;
+     width:2.49rem;
+     font-size: 0.24rem;
+     box-sizing: border-box;
+     float: left;
+     text-align: center;
+     text-decoration: none;
+     color: #999;
+}
+ .nav a span{
+     display: block;
+     margin: 0 auto;
+     width: 0.90rem;
+     height:0.70rem;
+}
+ .nav a span.nav_ico1{
+     background: url(../img/job.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico2{
+     background: url(../img/com.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico3{
+     background: url(../img/news.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico4{
+     background: url(../img/my.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico1:hover{
+     background: url(../img/job2.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico2:hover{
+     background: url(../img/coms.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico3:hover{
+     background: url(../img/news2.png) no-repeat center;
+     background-size: contain;
+}
+ .nav a span.nav_ico4:hover{
+     background: url(../img/my2.png) no-repeat center;
+     background-size: contain;
+}
+/*头部*/
+ .head{
+     width: 10rem;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 99;
+     background: rgba(83,202,196,0);
+}
+ .head h3{
+     text-align: center;
+     line-height: 1.2rem;
+     color: #fff;
+     position: relative;
+     font-size: 0.4rem;
+     font-weight: 400;
+}
+ .head h3 span{
+     display: inline-block;
+     width: 0.466rem;
+     height: 0.466rem;
+     background: url(../img/set.png) no-repeat;
+     position: absolute;
+     right: 0.266rem;
+     top: 50%;
+     transform: translateY(-50%);
+     background-size: contain;
+}
+ .head h3 span.cur:before{
+     content: '';
+     position: absolute;
+     right: 0;
+     top: 0;
+     width: 0.133rem;
+     height: 0.133rem;
+     border-radius: 50%;
+     background: red;
+}
+/*内容*/
+ .body{
+     width: 10rem;
+     padding:0 0 1.4rem 0;
+}
+ .body_top{
+     background: #53cac4;
+     height: 4.133rem;
+     display: flex;
+     justify-content: space-between;
+     padding: 1.2rem 0.466rem 0 0.466rem;
+     box-sizing: border-box;
+}
+ .body_top_l{
+     display: flex;
+     flex: 1;
+     align-items: center;
+}
+ .body_top_r{
+     display: flex;
+     flex: 1;
+     flex-direction:row-reverse;
+     padding-right: 0.133rem;
+     align-items: center;
+}
+ .body_top_l span h3{
+     font-size: 0.4rem;
+     color: #fff;
+     font-weight: 400;
+     line-height: 0.6rem;
+}
+ .body_top_l span p,.body_top_r span p{
+     color: #fff;
+     font-size: 0.32rem;
+     line-height: 0.533rem;
+}
+ .body_top_l span:nth-child(1){
+     width: 1.6rem;
+     height: 1.6rem;
+     display: inline-block;
+     border-radius: 50%;
+     border: 5px solid #76d5d0;
+     overflow: hidden;
+}
+ .body_top_l span:nth-child(2){
+     margin-left: 0.4rem;
+}
+ .body_top_l span img{
+     display: block;
+     width: 100%;
+     vertical-align: middle;
+     border:0;
+}
+ .body_top_r span:nth-child(2){
+     margin-right: 0.2rem;
+     text-align: right;
+}
+ .body_con{
+     display: flex;
+     flex-direction: column;
+}
+ .body_con_top{
+     display: flex;
+     justify-content: space-between;
+     background: #fff;
+     height: 2rem;
+     border-bottom: 1px solid #ccc;
+}
+ .body_con_top a{
+     align-self: center;
+     flex: 1;
+}
+ .body_con_top a h3{
+     text-align: center;
+     font-weight: 400;
+     font-size: 0.466rem;
+}
+ .body_con_top a p{
+     text-align: center;
+     font-size: 0.32rem;
+     color: #aaa;
+     line-height: 0.466rem;
+}
+ .body_con_bot{
+     margin-top: 0.266rem;
+     display: flex;
+     flex-direction: column;
+     background: #fff;
+}
+ .body_con_bot_t,.body_con_bot_b{
+     display: flex;
+     flex-direction: row;
+     padding-left: 0.013rem;
+     margin: 0 auto;
+}
+ .body_con_bot a{
+     text-align: center;
+     font-size: 0.266rem;
+     width: 2.506rem;
+     height: 2.506rem;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border:1px solid #ccc;
+     margin: -0.0133rem 0 0 -0.0133rem;
+     line-height: 0.666rem;
+}
+ .body_con_bot a span{
+     display: block;
+     width: 0.666rem;
+     height: 0.666rem;
+     margin: 0 auto;
+}
+ .body_con_bot a span.img1{
+     background: url(../img/ico-1.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img2{
+     background: url(../img/ico-2.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img3{
+     background: url(../img/ico-3.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img4{
+     background: url(../img/ico-4.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img5{
+     background: url(../img/ico-5.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img6{
+     background: url(../img/ico-6.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img7{
+     background: url(../img/ico-7.png) no-repeat;
+     background-size: contain;
+}
+ .body_con_bot a span.img8{
+     background: url(../img/ico-8.png) no-repeat;
+     background-size: contain;
+}
+
+
+ .body_bot{
+     display: flex;
+     border-top: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     margin-top: 0.26rem;
+     background: #fff;
+     flex-direction: column;
+}
+ .body_bot a{
+     display: flex;
+     flex-direction: row;
+     height: 1.6rem;
+}
+ .body_bot a div:nth-child(1){
+     flex: 1;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+}
+ .body_bot a div:nth-child(1) img{
+     display: inline-block;
+     width: 0.53rem;
+     height: 0.53rem;
+}
+ .body_bot a div:nth-child(2){
+     flex: 7;
+     display: inline-flex;
+     border-bottom: 1px solid #ccc;
+     justify-content: space-between;
+     align-items: center;
+     box-sizing: border-box;
+     padding-right: 0.53rem;
+}
+ .body_bot a div:nth-child(2) h3{
+     font-weight: 500;
+     font-size: 0.4rem;
+}
+ .body_bot a div:nth-child(2) h3 span{
+     font-size: 0.4rem;
+     color: #aaa;
+}
+ .body_bot a div:nth-child(2) i{
+     display: inline-block;
+     width: 0.2rem;
+     height: 0.26rem;
+     background: url(../img/yjt.png) no-repeat center;
+     background-size: contain;
+}
+ 
