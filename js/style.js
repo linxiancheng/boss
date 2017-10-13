@@ -15,8 +15,20 @@ $(function(){
 			url: './js/test.json',
 			dataType: 'json',
 			success: function(data) {
+					var src;
 				for (var i = 0; i < data.xinxi.length; i++) {
-					console.log(data.xinxi[i].dizhi);
+					src = `
+					<a href="javascript:;" class="clearfix">
+						<h3>web前端 <span class="fr">5k-10k</span></h3>
+						<p>大城小市&nbsp;&nbsp;天使轮</p>
+						<p class="z-20">广州&nbsp;越秀区&nbsp;水荫&nbsp;|&nbsp;1-3年&nbsp;|&nbsp;大专</p>
+						<div class="pro_ren">
+							<div class="pro_ren_l fl"><img src="img/job-tou.png" alt="" class=""></div>
+							<div class="pro_ren_r fl"><span>candi</span>&nbsp;|&nbsp;<span>hr</span></div>
+						</div>
+					</a>
+					`;
+					$('.pro').append(src);
 				}
 			}
 		})
