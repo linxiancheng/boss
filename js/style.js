@@ -15,7 +15,7 @@ $(function(){
 			url: './js/test.json',
 			dataType: 'json',
 			success: function(data) {
-				for (var i = 0; i < data.xinxi.lenght; i++) {
+				for (var i = 0; i < data.xinxi.length; i++) {
 					console.log(data.xinxi[i].dizhi);
 				}
 			}
