@@ -15,7 +15,7 @@ $(function(){
 			url: './js/test.json',
 			dataType: 'json',
 			success: function(data) {
-				console.log(data.xinxi);
+				console.log(data.xinxi[0]);
 			}
 		})
 	})
