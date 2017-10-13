@@ -1,0 +1,57 @@
+{
+   "xinxi" : [
+                {
+                    "name" : "广州六米网络",
+                    "job" : "web前端开发",
+                    "dizhi" : "广州 天河区 林和",
+                    "xinshui" : "5k-8k",
+                    "xueli" : "大专",
+                    "jingyan" : "1-3年",
+                    "rongzhi" : "未融资",
+                    "zhaopinren" : {
+                                    "name" : "张三",
+                                    "zhiwei" : "运营总监"
+                                }
+                },
+                {
+                    "name" : "培训机构",
+                    "job" : "web前端",
+                    "dizhi" : "广州 天河区 车陂",
+                    "xinshui" : "4k-6k",
+                    "xueli" : "本科",
+                    "jingyan" : "1-3年",
+                    "rongzhi" : "A轮",
+                    "zhaopinren" : {
+                                    "name" : "李四",
+                                    "zhiwei" : "HR"
+                                }
+                },
+                {
+                    "name" : "次元仓",
+                    "job" : "web前端开发/微信小程序",
+                    "dizhi" : "广州 荔湾区 龙凤",
+                    "xinshui" : "5k-10k",
+                    "xueli" : "本科",
+                    "jingyan" : "1-3年",
+                    "rongzhi" : "天使轮",
+                    "zhaopinren" : {
+                                    "name" : "梁婧",
+                                    "zhiwei" : "COO"
+                                }
+                },
+                {
+                    "name" : "亿动创想",
+                    "job" : "web前端开发工程师",
+                    "dizhi" : "广州 白云区 黄石",
+                    "xinshui" : "4k-8k",
+                    "xueli" : "大专",
+                    "jingyan" : "经验不限",
+                    "rongzhi" : "不需要融资",
+                    "zhaopinren" : {
+                                    "name" : "朱军华",
+                                    "zhiwei" : "总经理"
+                                }
+                }
+             ]
+   
+}

@@ -52,10 +52,16 @@ body{font-family: "微软雅黑";background: #e9efef;}
 .nav a span.nav_ico3{background: url(../img/news.png) no-repeat center;background-size: contain;}
 .nav a span.nav_ico4{background: url(../img/my.png) no-repeat center;background-size: contain;}
 
-.nav a span.nav_ico1:hover{background: url(../img/job2.png) no-repeat center;background-size: contain;}
-.nav a span.nav_ico2:hover{background: url(../img/coms.png) no-repeat center;background-size: contain;}
-.nav a span.nav_ico3:hover{background: url(../img/news2.png) no-repeat center;background-size: contain;}
-.nav a span.nav_ico4:hover{background: url(../img/my2.png) no-repeat center;background-size: contain;}
+
+.nav a span.nav_ico1:hover,
+.nav a.cur span.nav_ico1{background: url(../img/job2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico2:hover,
+.nav a.cur span.nav_ico2{background: url(../img/coms.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico3:hover,
+.nav a.cur span.nav_ico3{background: url(../img/news2.png) no-repeat center;background-size: contain;}
+.nav a span.nav_ico4:hover,
+.nav a.cur span.nav_ico4{background: url(../img/my2.png) no-repeat center;background-size: contain;}
+
 
 
 

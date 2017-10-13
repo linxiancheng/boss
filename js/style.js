@@ -10,6 +10,18 @@ $(function(){
 	})
 })
 
+$(function(){
+		$.ajax({
+			url: './js/test.json',
+			dataType: 'json',
+			success: function(data) {
+				console.log(data);
+			}
+		})
+	})
+
+
+
 // pro
 $(function(){
 	var head_bot_box = $('.head_bot_box');
