@@ -18,19 +18,19 @@ $(function(){
 					var src;
 				for (var i = 0; i < data.xinxi.length; i++) {
 					src = `
-				<div class="pro">
-					<a href="javascript:;" class="clearfix">
-						<h3>web前端 <span class="fr">5k-10k</span></h3>
-						<p>大城小市&nbsp;&nbsp;天使轮</p>
-						<p class="z-20">广州&nbsp;越秀区&nbsp;水荫&nbsp;|&nbsp;1-3年&nbsp;|&nbsp;大专</p>
-						<div class="pro_ren">
-							<div class="pro_ren_l fl"><img src="img/job-tou.png" alt="" class=""></div>
-							<div class="pro_ren_r fl"><span>candi</span>&nbsp;|&nbsp;<span>hr</span></div>
-						</div>
-					</a>
-				</div>
+					<div class="pro">
+						<a href="javascript:;" class="clearfix">
+								<h3>`+ data.xinxi[i].job + ` <span class="fr">`+ data.xinxi[i].xinshui +`</span></h3>
+								<p>`+ data.xinxi[i].name +`&nbsp;&nbsp;`+ data.xinxi[i].rongzhi +`</p>
+								<p class="z-20">`+ data.xinxi[i].dizhi + `&nbsp;|&nbsp;`+ data.xinxi[i].jingyan +`&nbsp;|&nbsp;`+ data.xinxi[i].xueli +`</p>
+								<div class="pro_ren">
+									<div class="pro_ren_l fl"><img src="img/job-tou.png" alt="" class=""></div>
+									<div class="pro_ren_r fl"><span>`+ data.xinxi[i].zhaopinren.name +`</span>&nbsp;|&nbsp;<span>`+ data.xinxi[i].zhaopinren.zhiwei +`</span></div>
+								</div>
+						</a>
+					</div>
 					`;
-					$('.body').append(src);
+					$('.pro').append(src);
 				}
 			}
 		})
