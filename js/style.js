@@ -30,7 +30,7 @@ $(function(){
 						</a>
 					</div>
 					`;
-					$('.pro').append(src);
+					$('.body').append(src);
 				}
 			}
 		})
