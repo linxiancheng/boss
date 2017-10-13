@@ -18,6 +18,7 @@ $(function(){
 					var src;
 				for (var i = 0; i < data.xinxi.length; i++) {
 					src = `
+				<div class="pro">
 					<a href="javascript:;" class="clearfix">
 						<h3>web前端 <span class="fr">5k-10k</span></h3>
 						<p>大城小市&nbsp;&nbsp;天使轮</p>
@@ -27,8 +28,9 @@ $(function(){
 							<div class="pro_ren_r fl"><span>candi</span>&nbsp;|&nbsp;<span>hr</span></div>
 						</div>
 					</a>
+				</div>
 					`;
-					$('.pro').append(src);
+					$('.body').append(src);
 				}
 			}
 		})
