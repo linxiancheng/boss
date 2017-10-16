@@ -52,6 +52,64 @@
                                     "zhiwei" : "总经理"
                                 }
                 }
-             ]
+             ],
+   "gongshi":[
+                {
+
+                    "name" : "渠道无忧",
+                    "dizhi" : "广州白云区黄石",
+                    "guimo" : "20-99人",
+                    "hangye" : "移动互联网",
+                    "rongzhi" : "不需要融资",
+                    "zhaopinjob" : {
+                                    "job1" : "web前端开发工程师",
+                                    "job2" : "自媒体运营专员",
+                                    "job3" : "竞价助理",
+                                    "job4" : "空间设计师"
+                                } 
+                },
+                {
+
+                    "name" : "爱范儿",
+                    "dizhi" : "广州市海珠区赤岗",
+                    "guimo" : "100-499人",
+                    "hangye" : "移动互联网",
+                    "rongzhi" : "C轮",
+                    "zhaopinjob" : {
+                                    "job1" : "web前端",
+                                    "job2" : "自媒体",
+                                    "job3" : "网站编辑",
+                                    "job4" : "设计师"
+                                } 
+                },
+                {
+
+                    "name" : "驰达家维科技",
+                    "dizhi" : "广州天河区",
+                    "guimo" : "100-499人",
+                    "hangye" : "IT软件",
+                    "rongzhi" : " ",
+                    "zhaopinjob" : {
+                                    "job1" : "web前端开发/react",
+                                    "job2" : "网页设计",
+                                    "job3" : "PHP开发",
+                                    "job4" : "C++开发"
+                                } 
+                },
+                {
+
+                    "name" : "棒谷",
+                    "dizhi" : "广州市白云区白云大道",
+                    "guimo" : "1000-9999人",
+                    "hangye" : "互联网",
+                    "rongzhi" : "不需要融资",
+                    "zhaopinjob" : {
+                                    "job1" : "中/高级前端开发",
+                                    "job2" : "java开发工程师",
+                                    "job3" : "QA工程师",
+                                    "job4" : "IOS开发"
+                                } 
+                }
+            ]
    
 }
