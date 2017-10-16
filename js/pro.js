@@ -33,7 +33,7 @@ $(function(){
 							</div>
 						</a>
 						<a href="javascript:;" class="pro_a">
-							热招：<span class="color1">`+ data.gongshi[i].zhaopinjob.job1 +`</span>等`+ data.gongshi[i].zhaopinjob.length +`个职位<span class="tr">&gt;</span>
+							热招：<span class="color1">`+ data.gongshi[i].zhaopinjob.job1 +`</span>等`+ Object.getOwnPropertyNames(data.gongshi[i].zhaopinjob).length +`个职位<span class="tr">&gt;</span>
 						</a>
 					</div>
 					`;
