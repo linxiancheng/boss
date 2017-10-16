@@ -9,7 +9,12 @@ $(function(){
 		tab2.eq(ind).show(0).siblings().hide(0);
 	})
 })
+//ios底部导航会跟着滑动
+var preHandler = function(e){e.preventDefault();}
+document.addEventListener('touchmove', preHandler, false);
 
+
+//数据调用
 $(function(){
 		$.ajax({
 			url: './js/test.json',
