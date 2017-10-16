@@ -26,14 +26,14 @@ $(function(){
 								<img src="img/ico-pro.png" alt="pro-logo">
 							</div>
 							<div class="pro_right">
-								<h3>`+ data.xinxi[i].name +`</h3>
-								<p>`+ data.xinxi[i].dizhi +`</p>
-								<p>`+ data.xinxi[i].hangye +`&nbsp;|&nbsp;`+ data.xinxi[i].rongzhi +`&nbsp;|&nbsp;`+ data.xinxi[i].guimo +`</p>
+								<h3>`+ data.gongshi[i].name +`</h3>
+								<p>`+ data.gongshi[i].dizhi +`</p>
+								<p>`+ data.gongshi[i].hangye +`&nbsp;|&nbsp;`+ data.gongshi[i].rongzhi +`&nbsp;|&nbsp;`+ data.gongshi[i].guimo +`</p>
 
 							</div>
 						</a>
 						<a href="javascript:;" class="pro_a">
-							热招：<span class="color1">`+ data.xinxi[i].zhaopinjob.job1 +`</span>等`+ data.xinxi[i].zhaopinjob.length +`个职位<span class="tr">&gt;</span>
+							热招：<span class="color1">`+ data.gongshi[i].zhaopinjob.job1 +`</span>等`+ data.gongshi[i].zhaopinjob.length +`个职位<span class="tr">&gt;</span>
 						</a>
 					</div>
 					`;
