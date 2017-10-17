@@ -14,7 +14,7 @@ body{font-family: "微软雅黑";background: #e9efef;}
 
 .head_pro_box{position: relative;}
 .head_box_box{display: none;}
-.head_box{height: 10.06rem; position: absolute;top:0;left: 0;width: 10rem;background: rgba(0,0,0,.4); }
+.head_box{height: 15rem; position: absolute;top:0;left: 0;width: 10rem;background: rgba(0,0,0,.4); }
 .head_box_top{width: 10rem;height: 4.86rem;background: #f8f8f8;}
 .head_box_top a{display: inline-block;font-size: 0.32rem; width: 2rem;height: 0.8rem;border:1px solid #ccc;border-radius: 0.13rem;float: left; line-height: 0.8rem;text-align: center; margin: 0.38rem 0 0 0.38rem; background: #fff;color: #797979;}
 .head_box_bot{width: 10rem;height: 1.08rem; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background: #f8f8f8;}
