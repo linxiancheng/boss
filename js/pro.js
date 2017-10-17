@@ -4,6 +4,8 @@ $(function(){
 	var head_box_box = $('.head_pro_box .head_box_box');
 	var head_box = $('.head_box');
 	var head_box_top_a = $('.head_box_top a');
+	var head_box_bot_cz = $('.head_box_bot_cz');
+	var head_box_bot_qd = $('.head_box_bot_qd');
 
 	head_bot_box.click(function(){
 		var ind = $(this).index();
@@ -15,9 +17,16 @@ $(function(){
 	});
 	head_box_top_a.click(function(e){
 		$(this).toggleClass('cur');
-
-		e.stopPropagation();
+		// $(this).eq(1).removeClass('cur');
+		var ind = $('.head_box_top a.cur').length;
+		head_box_bot_qd.html("确定" +"&nbsp;&nbsp;&nbsp;"+ "( "+ ind +" )" )
+		e.stopPropagation();//阻止时间冒泡
 	});
+	head_box_bot_cz.click(function(){
+
+		head_box_top_a.eq(1).addClass('cur').siblings().removeClass('cur');
+
+	})
 
 //数据显示
 	$.ajax({
