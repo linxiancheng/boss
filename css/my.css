@@ -98,7 +98,7 @@
 /*内容*/
  .body{
      width: 10rem;
-     padding:0 0 1.4rem 0;
+     padding:0 0 4rem 0;
 }
  .body_top{
      background: #53cac4;
@@ -275,6 +275,9 @@
      align-items: center;
      box-sizing: border-box;
      padding-right: 0.53rem;
+}
+.body_bot a:last-child div:nth-child(2){
+     border-bottom: 0;
 }
  .body_bot a div:nth-child(2) h3{
      font-weight: 500;
