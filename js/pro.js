@@ -6,15 +6,18 @@ $(function(){
 	var head_box_top_a = $('.head_box_top a');
 	var head_box_bot_cz = $('.head_box_bot_cz');
 	var head_box_bot_qd = $('.head_box_bot_qd');
-
+	//选项卡
 	head_bot_box.click(function(){
 		var ind = $(this).index();
 		$(this).find('div').addClass('curs').parent().siblings().find('div').removeClass('curs');
 		head_box_box.eq(ind).show().siblings().hide();
 	})
+	//点击别处隐藏
 	head_box.click(function(){
 		head_box_box.hide();
 	});
+
+	//多选反选
 	head_box_top_a.click(function(e){
 		$(this).toggleClass('cur');
 		// $(this).eq(1).removeClass('cur');
@@ -22,9 +25,20 @@ $(function(){
 		head_box_bot_qd.html("确定" +"&nbsp;&nbsp;&nbsp;"+ "( "+ ind +" )" )
 		e.stopPropagation();//阻止时间冒泡
 	});
-	head_box_bot_cz.click(function(){
+	//重置
+	head_box_bot_cz.click(function(e){
 
 		head_box_top_a.eq(1).addClass('cur').siblings().removeClass('cur');
+
+		e.stopPropagation();//阻止时间冒泡
+
+	});
+	//确认
+	head_box_bot_qd.click(function(e){
+
+		console.log("确认");
+
+		e.stopPropagation();//阻止时间冒泡
 
 	})
 
@@ -57,7 +71,22 @@ $(function(){
 				}
 				
 			}
+		});
+	
+	//选项卡封装，参数1：点击按钮，参数2：对应盒子显示
+	function tab(a,b) {
+		var btn = a ;
+		var box = b ;
+		btn.click(function(){
+
+			var ind = $(this).index();
+
+			$(this).addClass('cur').siblings().removeClass('cur');
+
+			box.eq(ind).show().siblings().hide();
+
+			e.stopPropagation();//阻止时间冒泡
 		})
-
-
+		
+	}
 })

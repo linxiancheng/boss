@@ -10,7 +10,28 @@ $(function(){
 	})
 })
 
+$(function(){
+	
+	//选项卡封装，参数1：点击按钮，参数2：对应盒子显示
+	function tab(a,b) {
+		var btn = a ;
+		var box = b ;
+		btn.click(function(){
 
+			var ind = $(this).index();
+
+			$(this).addClass('cur').siblings().removeClass('cur');
+
+			box.eq(ind).show().siblings().hide();
+
+			e.stopPropagation();//阻止时间冒泡
+		})
+		
+	}
+
+
+
+})
 
 //数据调用
 $(function(){
