@@ -22,14 +22,14 @@ $(function(){
 		$(this).toggleClass('cur');
 		// $(this).eq(1).removeClass('cur');
 		var ind = $('.head_box_top a.cur').length;
-		head_box_bot_qd.html("确定" +"&nbsp;&nbsp;&nbsp;"+ "( "+ ind +" )" )
+		head_box_bot_qd.html("确定" +"&nbsp;&nbsp;&nbsp;"+ "( "+ ind +" )" );
 		e.stopPropagation();//阻止时间冒泡
 	});
 	//重置
 	head_box_bot_cz.click(function(e){
 
 		head_box_top_a.eq(0).addClass('cur').siblings().removeClass('cur');
-
+		head_box_bot_qd.html("确定" );
 		e.stopPropagation();//阻止时间冒泡
 
 	});
