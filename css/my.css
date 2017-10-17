@@ -27,12 +27,7 @@
      text-decoration: none;
      color: #999;
 }
- .nav a span{
-     display: block;
-     margin: 0 auto;
-     width: 0.90rem;
-     height:0.70rem;
-}
+.nav a span{display: block;margin: 0 auto;width: 0.90rem;height:0.70rem; position: relative;}
 .nav a span.cur:before{content: ''; position: absolute;width: 0.2rem;height: 0.2rem;right: 0.06rem;;top: -0.06rem;border-radius: 50%;background: red;}
 
  .nav a span.nav_ico1{
