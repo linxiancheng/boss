@@ -28,7 +28,7 @@ $(function(){
 	//重置
 	head_box_bot_cz.click(function(e){
 
-		head_box_top_a.eq(1).addClass('cur').siblings().removeClass('cur');
+		head_box_top_a.eq(0).addClass('cur').siblings().removeClass('cur');
 
 		e.stopPropagation();//阻止时间冒泡
 
@@ -72,7 +72,7 @@ $(function(){
 				
 			}
 		});
-	
+
 	//选项卡封装，参数1：点击按钮，参数2：对应盒子显示
 	function tab(a,b) {
 		var btn = a ;
