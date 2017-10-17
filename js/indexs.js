@@ -11,7 +11,7 @@ $(function(){
 })
 
 $(function(){
-	
+
 	//选项卡封装，参数1：点击按钮，参数2：对应盒子显示
 	function tab(a,b) {
 		var btn = a ;
@@ -46,7 +46,7 @@ $(function(){
 						<a href="javascript:;" class="clearfix">
 								<h3>`+ data.xinxi[i].job + ` <span class="fr">`+ data.xinxi[i].xinshui +`</span></h3>
 								<p>`+ data.xinxi[i].name +`&nbsp;&nbsp;`+ data.xinxi[i].rongzhi +`</p>
-								<p class="z-20">`+ data.xinxi[i].dizhi + `&nbsp;|&nbsp;`+ data.xinxi[i].jingyan +`&nbsp;|&nbsp;`+ data.xinxi[i].xueli +`</p>
+								<p class="z-20"><span class="img1"></span>`+ data.xinxi[i].dizhi + `&nbsp;|&nbsp;<span class="img2"></span>`+ data.xinxi[i].jingyan +`&nbsp;|&nbsp;<span class="img3"></span>`+ data.xinxi[i].xueli +`</p>
 								<div class="pro_ren">
 									<div class="pro_ren_l fl"><img src="img/job-tou.png" alt="" class=""></div>
 									<div class="pro_ren_r fl"><span>`+ data.xinxi[i].zhaopinren.name +`</span>&nbsp;|&nbsp;<span>`+ data.xinxi[i].zhaopinren.zhiwei +`</span></div>
