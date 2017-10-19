@@ -1,0 +1,289 @@
+@color: #e9efef;
+
+.border-box{
+	box-sizing: border-box;
+}
+.flex(@flex: row){
+	display: flex;
+	flex-direction: @flex;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	background: #e9efef;
+}
+// 头部
+#header{
+	.flex(column);
+	justify-content: center;
+	width: 10.0rem;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 99;
+	transform: translateX(-50%);
+	.header_t{
+		.flex;
+		.border-box;
+		height: 1.133333rem;
+		background: #53cac3;
+		
+		.header_box{
+			flex: 1;
+			.flex(column);
+			justify-content: center;
+
+			&:last-child{
+				.flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			span{
+				display: inline-block;
+				width: 0.6rem;
+				height: 0.6rem;
+				cursor: pointer;
+				&.head_img1{
+					margin-left: 0.2rem;
+					background: url(../img/zuo.png) center no-repeat;
+					background-size: contain;
+				}
+				&.head_img2{
+					margin-right: 0.2rem;
+					background: url(../img/dian.png) center no-repeat;
+					background-size: contain;
+				}
+				
+			}
+			h3{
+				color: #fff;
+				text-align: center;
+				font-size: 0.4rem;
+				font-weight: 400;
+				line-height: 1.2;
+			}
+			p{
+				color: #fff;
+				text-align: center;
+				font-size: 0.32rem;
+				line-height: 1.2;
+			}
+		}
+
+	}
+	.header_b{
+		.flex;
+		.border-box;
+		padding: 0.133333rem 0;
+		height: 1.6rem;
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+		.header_b_box{
+			flex: 1;
+			.flex(column);
+			.border-box;
+			align-items: center;
+			justify-content: center;
+			border-left: 1px solid #ccc;
+			cursor: pointer;
+			&:first-child{
+				border-left: 0;
+			}
+			p{
+				text-align: center;
+				font-size: 0.32rem;
+				color: #666;
+			}
+			span{
+				display: inline-block;
+				width: 0.666667rem;
+				height: 0.666667rem;
+				margin: 0.066667rem auto;
+				&.b_box_img1{
+					background: url(../img/tell.png) center no-repeat;
+					background-size: contain;
+				}
+				&.b_box_img2{
+					background: url(../img/wecat.png) center no-repeat;
+					background-size: contain;
+				}
+				&.b_box_img3{
+					background: url(../img/pro_job.png) center no-repeat;
+					background-size: contain;
+				}
+				&.b_box_img4{
+					background: url(../img/jz.png) center no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+	
+}
+// 聊天内容展示
+.body{
+	background: #e9efef;
+	// height: calc(100% - 3.1rem);
+	width: 100%;
+	margin: 2.7rem auto 1.2rem;
+	overflow: hidden;
+	.body_box{
+		.flex(column);
+		.border-box;
+		width: 100%;
+		// height: 100%;
+		overflow: auto;
+		padding: 0 0.266667rem;
+		flex-direction: column;
+		.body_duiqi(@duiqi: flex-start){
+			justify-content: @duiqi;
+		}
+		.body_box_boxr{
+			.flex;
+			.border-box;
+			.body_duiqi(flex-end);
+			margin: 0.133333rem 0;
+			.body_dh{
+				.border-box;
+				padding: 0.4rem 0.266667rem;
+				max-width: 5.8rem;
+				border-radius: 0.133333rem;
+				background: #5dcac3;
+				color: #fff;
+				font-size: 0.32rem;
+				line-height: 0.533333rem;
+				position: relative;
+				margin-right: 0.4rem;
+				&:after{
+					 content: "";
+					 position: absolute;
+					 top: 0.4rem;
+					 right: -0.18rem;
+					 width: 0;
+				     height: 0;
+				     border-top: 0.266667rem solid transparent;
+				     border-left: 0.23rem solid #5dcac3;
+				     border-bottom: 0.266667rem solid transparent;
+				}
+			}
+			.body_tx{
+				.border-box;
+				width: 1.133333rem;
+				height: 1.133333rem;
+				border-radius: 50%;
+				overflow: hidden;
+				span{
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					background: url(../img/liao_tou.png) center no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+
+		.body_box_boxl{
+			.flex;
+			.border-box;
+			.body_duiqi;
+			margin: 0.133333rem 0;
+			.body_dh{
+				.border-box;
+				padding: 0.4rem 0.266667rem;
+				max-width: 5.8rem;
+				border-radius: 0.133333rem;
+				background: #fff;
+				color: #333;
+				font-size: 0.32rem;
+				line-height: 0.533333rem;
+				position: relative;
+				margin-left: 0.4rem;
+				&:after{
+					 content: "";
+					 position: absolute;
+					 top: 0.4rem;
+					 left: -0.18rem;
+					 width: 0;
+				     height: 0;
+				     border-top: 0.266667rem solid transparent;
+				     border-right: 0.23rem solid #fff;
+				     border-bottom: 0.266667rem solid transparent;
+				}
+			}
+			.body_tx{
+				.border-box;
+				width: 1.133333rem;
+				height: 1.133333rem;
+				border-radius: 50%;
+				overflow: hidden;
+				span{
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					background: url(../img/liao_tou.png) center no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+}
+
+// 聊天输入
+.footer{
+	position: fixed;
+	z-index: 99;
+	left: 50%;
+	bottom: 0;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	padding:0 0.133333rem;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 10.0rem;
+	height: 1.2rem;
+	.flex;
+	justify-content: space-between;
+	align-items: center;
+	.border-box;
+	.test{
+		width: 1.266667rem;
+		height: 0.8rem;
+		color: #fff;
+		line-height: 0.8rem;
+		background: #61d2ce;
+		border-radius: 0.133333rem;
+		text-align: center;
+		.border-box;
+		font-size: 0.32rem;
+		cursor: pointer;
+	}
+	input{
+		&#test{
+			border: 1px solid #ccc;
+			height: 0.866667rem;
+			border-radius: 0.133333rem;
+			width: 6.2rem;
+			.border-box;
+		}
+	}
+	span{
+		display: inline-block;
+		width: 0.733333rem;
+		height: 0.733333rem;
+		overflow: hidden;
+		.border-box;
+		padding: 0.066667rem;
+		&.l_img1{
+			background: url(../img/shiping.png) center no-repeat;
+			background-size: contain;
+		}
+		&.l_img2{
+			background: url(../img/jia_pro.png) center no-repeat;
+			background-size: contain;
+		}
+	}
+}
