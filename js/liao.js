@@ -6,7 +6,7 @@ $(function () {
 	});
 	$('#test').bind('focus', function () {
 		$('.footer').css({
-			"position" : "relative",
+			"position" : "absolute",
 		});
 	})
 	$('#test').bind('blur', function () {
