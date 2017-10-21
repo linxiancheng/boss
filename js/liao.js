@@ -5,14 +5,14 @@ $(function () {
 		history.go(-1);
 	});
 	
-	// $('#test').bind('focus', function () {
-	// 	$('.footer').css({
-	// 		"position" : "relative",
-	// 	});
-	// })
-	// $('#test').bind('blur', function () {
-	// 	$('.footer').css({
-	// 		"position" : "fixed",
-	// 	});
-	// })
+	$('#test').bind('focus', function () {
+		$('.body_box').css({
+			// "position" : "relative",
+		});
+	})
+	$('#test').bind('blur', function () {
+		$('.body_box').css({
+			// "position" : "fixed",
+		});
+	})
 })

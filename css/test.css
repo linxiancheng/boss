@@ -121,13 +121,13 @@ body {
 .body {
   background: #e9efef;
   width: 100%;
-  margin: 2.7rem auto 1.2rem;
   overflow: hidden;
 }
 .body .body_box {
   display: flex;
   box-sizing: border-box;
   width: 100%;
+  margin: 2.7rem auto 1.2rem;
   overflow: auto;
   padding: 0 0.266667rem;
   flex-direction: column;
