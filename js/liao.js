@@ -6,13 +6,11 @@ $(function () {
 	});
 	
 	$('#test').bind('focus', function () {
-		$('.body_box').css({
-			// "position" : "relative",
-		});
+		$('.body_box').css("margin",0);
+		$('#header').css("position","relative");
 	})
 	$('#test').bind('blur', function () {
-		$('.body_box').css({
-			// "position" : "fixed",
-		});
+		$('.body_box').css("margin","2.7rem auto 1.2rem");
+		$('#header').css("position","fixed");
 	})
 })
