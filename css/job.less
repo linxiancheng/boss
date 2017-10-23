@@ -1,0 +1,393 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+
+}
+.border-box{
+	box-sizing: border-box;
+}
+.flex(@flex: row){
+	display: flex;
+	flex-direction: @flex;
+}
+
+
+.header{
+	.flex;
+	.border-box;
+
+	justify-content: center;
+	width: 10.0rem;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 99;
+	transform: translateX(-50%);
+	.header_t{
+		.flex;
+		.border-box;
+		width: 10.0rem;
+		padding: 0 0.266667rem;
+		height: 1.133333rem;
+		background: #53cac3;
+		
+		.header_box{
+			flex: 1;
+			.flex(column);
+			justify-content: center;
+
+			&:last-child{
+				.flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			span{
+				display: inline-block;
+				width: 0.6rem;
+				height: 0.6rem;
+				cursor: pointer;
+				&.head_img1{
+					margin-left: 0.2rem;
+					background: url(../img/zuo.png) center no-repeat;
+					background-size: contain;
+				}
+				&.head_img2{
+					margin-right: 0.2rem;
+					background: url(../img/dian.png) center no-repeat;
+					background-size: contain;
+				}
+				&.head_img3{
+					margin-right: 0.2rem;
+					background: url(../img/xin.png) center no-repeat;
+					background-size: contain;
+				}
+				&.head_img4{
+					margin-right: 0.2rem;
+					background: url(../img/jg.png) center no-repeat;
+					background-size: contain;
+				}
+				&.head_img5{
+					margin-right: 0.2rem;
+					background: url(../img/fx.png) center no-repeat;
+					background-size: contain;
+				}
+			}
+			h3{
+				color: #fff;
+				text-align: center;
+				font-size: 0.4rem;
+				font-weight: 400;
+				line-height: 1.2;
+			}
+			
+		}
+
+	}
+}
+.body{
+	margin:  1.133333rem 0;
+	background: #eff6f6;
+	
+	.body_box{
+		.flex(column);
+		.border-box;
+		background: #fff;
+		padding-bottom: 0.37rem;
+		&.b_20{
+			margin-bottom: 0.266667rem;
+		}
+		.body_box_tt{
+			.flex;
+			.border-box;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 0.24rem;
+			border-top: 1px solid #ccc;
+			font-size: 0.4rem;
+			height: 1.133333rem;
+			.box_head{
+				line-height: 1.2rem;
+				color: #999;
+				.haad_btn{
+					width: 1.333333rem;
+					height: 0.866667rem;
+					border-radius: 0.533333rem;
+					border: 2px solid #ddd;
+					position: relative;
+					input{
+						top: 0;
+					    right: 0;
+					    bottom: 0;
+					    left: 0;
+					    opacity: 0;
+					    z-index: 100;
+					    position: absolute;
+					    width: 100%;
+					    height: 100%;
+					    cursor: pointer;
+					    &:checked ~ label{
+					    	background: #53cac3;
+					    }
+					     &:checked ~ label i{
+					    	right: 0;
+					    }
+						
+					}
+					label{
+						display: block;
+					    width: 100%;
+					    height: 100%;
+					    border-radius: 0.533333rem;
+					    i{
+					    	display: block;
+					    	background: #fff;
+						    height: 100%;
+						    width: 60%;
+						    position: absolute;
+						    z-index: 2;
+						    right: 40%;
+						    top: 0;
+						    border-radius: 50%;
+						    box-shadow: 2px 0 5px #ccc;
+					    }
+					}
+				}
+			}
+		}
+		.body_box_t{
+			.flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 0.24rem;
+			border-bottom: 1px solid #ccc;
+			font-size: 0.4rem;
+			height: 1.2rem;
+			.box_head{
+				line-height: 1.2rem;
+				&:last-child{
+					font-size: 0.333333rem;
+					color: #999;
+					span{
+						width: 0.333333rem;
+						height: 0.333333rem;
+						vertical-align: middle;
+					}
+				}
+				&.f_red{
+					color: #fd887d;
+				}
+				span{
+					display: inline-block;
+					width: 0.466667rem;
+					height: 0.466667rem;
+					vertical-align: middle;
+					margin: 0 0.133333rem;
+					&.img_ico0{
+						margin-top: -0.13rem;
+						background: url(../img/job_xq.png) center no-repeat;
+						background-size: contain;
+					}
+					&.img_ico1{
+						margin-top: -0.13rem;
+						background: url(../img/jnxq.png) center no-repeat;
+						background-size: contain;
+					}
+					&.img_ico2{
+						margin-top: -0.13rem;
+						background: url(../img/fenxi.png) center no-repeat;
+						background-size: contain;
+					}
+					&.img_ico3{
+						margin-top: -0.13rem;
+						background: url(../img/boss.png) center no-repeat;
+						background-size: contain;
+					}
+					&.img_ico4{
+						margin-top: -0.13rem;
+						background: url(../img/red-jg.png) center no-repeat;
+						background-size: contain;
+					}
+					&.img_ico5{
+						margin-top: -0.1rem;
+						background: url(../img/yjt.png) center no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+		}
+		.body_box_b,.body_box_bb{
+			.flex(column);
+			.border-box;
+			padding:0.37rem 0 0 0;
+			margin: 0 0.24rem;
+			position: relative;
+
+
+			p{
+				font-size: 0.333333rem;
+				color: #666;
+				line-height: 0.666667rem;
+				span{
+					display: inline-block;
+					width: 0.6rem;
+					color: #53cac3;
+					text-align: center;
+					filter:blur(0.066667rem);
+				}
+			}
+			.box_b_btn{
+				width: 100%;
+				height: 0.666667rem;
+				.border-box;
+				justify-content: center;
+				align-content: center;
+				position: absolute;
+				left: 0;
+				bottom: -0.066667rem;
+				background: #fff;
+				z-index: 10;
+				span{
+					display: block;
+					.border-box;
+					margin: 0 auto;
+					cursor: pointer;
+					width: 100%;
+					height: 0.666667rem;
+					background: #fff url(../img/job_v.png) center no-repeat;
+					transform:rotate(180deg);
+					
+				}
+			}
+			&.box_b_box{
+				.border-box;
+				height: 3.333333rem;
+				overflow: hidden;
+				.box_b_btn{
+					span{
+						transform:rotate(0deg);
+					}
+				}
+			}
+			
+		}
+		.body_box_bb{
+			padding:0.37rem 0 0.666667rem 0;
+		}
+	}
+
+
+
+
+
+	.job-tj{
+		background: #fff;
+		&>h3{
+				display: block;
+				height: 1.133333rem;
+				background: #eff6f6;
+				text-align: center;
+				color: #999;
+				line-height: 1.133333rem;
+				font-size: 0.4rem;
+			}
+
+
+
+		/*职位*/
+		.pro{
+			padding:0.37rem 0;
+			margin: 0.24rem;
+			background: #fff;
+			border-bottom: 1px solid #ccc;
+			overflow: hidden;
+
+			
+
+				a{
+					.flex;
+					line-height: 0.51rem; 
+					.pro_l{
+						width: 1.306667rem;
+						height: 1.306667rem;
+						span{
+							display: block;
+							width: 100%;
+							height: 100%;
+							background: url(../img/ico-pro.png) no-repeat;
+							background-size: contain;
+						}
+					}
+					.pro_r{
+						flex:10;
+						margin-left: 0.333333rem;
+					h3{
+						width: 100%;
+						font-size: 0.4rem;
+						span{
+							color: #fd887d;
+							font-size: 0.4rem;
+							&.fr{
+								text-align: right;
+							}
+						}
+					}
+					p{
+						font-size: 0.4rem;
+						color: #999;
+						span{
+							display: inline-block;
+							 width: 0.533333rem;
+							 height: 0.533333rem;
+							 vertical-align: middle;
+							 &.img1{
+							 	background: url(../img/job-zb.png) no-repeat;
+							 	background-size: contain;
+							 	background-position: 0 -0.05rem;
+								}
+							 &.img2{
+								background: url(../img/job-jy.png) no-repeat;
+								background-size: contain;
+								 background-position: 0 -0.05rem;
+								}
+							 &.img3{
+								background: url(../img/job-xl.png) no-repeat;
+								background-size: contain;
+								 background-position: 0 -0.05rem;
+								}
+							 &.z-20{
+									font-size: 0.266667rem;
+							 	}
+							}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+.footer{
+	.flex;
+	width: 100%;
+	height: 1.306667rem;
+	justify-content: center;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	z-index: 99;
+	transform: translateX(-50%);
+	background: #53cac3;
+	a{
+		flex:1;
+		font-size: 0.4rem;
+		text-align: center;
+		color: #fff;
+		line-height: 1.306667rem;
+	}
+}
