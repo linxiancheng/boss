@@ -82,8 +82,10 @@ html {
   line-height: 1.2;
 }
 .body {
-  margin: 1.133333rem 0 2rem 0;
+  box-sizing: border-box;
+  margin: 1.133333rem 0;
   background: #eff6f6;
+  padding-bottom: 1.5rem;
 }
 .body .body_box {
   display: flex;
