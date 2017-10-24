@@ -89,7 +89,7 @@ body,html{
 	}
 }
 .body{
-	margin:  1.133333rem 0;
+	margin: 1.133333rem 0;
 	background: #eff6f6;
 	
 	.body_box{
@@ -99,6 +99,134 @@ body,html{
 		padding-bottom: 0.37rem;
 		&.b_20{
 			margin-bottom: 0.266667rem;
+		}
+		.job_box_t{
+			.flex(column);
+			.border-box;
+
+			padding: 0.533333rem 0;
+			margin: 0 0.24rem;
+			border-bottom: 1px solid #ccc;
+			h3{
+				font-size: 0.466667rem;
+				margin-bottom: 0.333333rem;
+				span{
+					color: #fa716a;
+				}
+			}
+			.box_t_box{
+						font-size: 0.4rem;
+						height: 1.2rem;
+						line-height: 1.2rem;
+						span{
+							 display: inline-block;
+							 width: 0.533333rem;
+							 height: 0.533333rem;
+							 vertical-align: middle;
+							 &.img1{
+							 	background: url(../img/job-zb.png) no-repeat;
+							 	background-size: contain;
+							 	background-position: 0 -0.05rem;
+								}
+							 &.img2{
+								background: url(../img/job-jy.png) no-repeat;
+								background-size: contain;
+								 background-position: 0 -0.05rem;
+								}
+							 &.img3{
+								background: url(../img/job-xl.png) no-repeat;
+								background-size: contain;
+								 background-position: 0 -0.05rem;
+								}
+							 
+						}
+			}
+			p{
+				width: 80%;
+				line-height: 0.466667rem;
+				font-size: 0.333333rem;
+				color: #999;
+			}
+			
+		}
+		.job_box_c{
+			.flex;
+			.border-box;
+			align-items: center;
+			padding: 0.533333rem 0;
+			margin: 0.24rem;
+			justify-content: space-between;
+			border-bottom: 1px solid #e3e3e3;
+			.job_box_c_l{
+				.flex;
+				.border-box;
+				.box_c_box{
+					span{
+						display: inline-block;
+						align-items: center;
+						justify-content: center;
+						width: 1.6rem;
+						height: 1.6rem;
+						margin-right: 0.4rem;
+						background: url(../img/job-gs.png) center no-repeat;
+						background-size: contain;
+					}
+					h3{
+						font-weight: 500;
+						color: #888;
+						font-size: 0.4rem;
+						line-height: 1.6;
+					}
+					p{
+						line-height: 1.6;
+						font-size: 0.266667rem;
+						color: #ccc;
+					}
+				}
+			}
+			.job_box_c_r{
+				.flex;
+				.border-box;
+				span{
+						display: inline-block;
+						align-items: center;
+						justify-content: center;
+						width: 0.466667rem;
+						height: 0.466667rem;
+						margin-top: -0.1rem;
+						background: url(../img/yjt.png) center no-repeat;
+						background-size: contain;
+					
+				}
+			}
+		}
+		.job_box_b{
+			.flex;
+			.border-box;
+			align-items: center;
+			
+			margin: 0 0.24rem;
+			height: 0.666667rem;
+			justify-content: space-between;
+			p{
+				width: 85%;
+				overflow: hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				word-break:break-all;
+				font-size: 0.333333rem;
+				color: #999;
+				span{
+					color: #53cac3;
+				}
+			}
+			& > span{
+				display: inline-block;
+				width: 15%;
+				height: 0.533333rem;
+				background: url(../img/zb_ico.png) center no-repeat;
+				background-size: contain;
+			}
 		}
 		.body_box_tt{
 			.flex;
@@ -219,6 +347,52 @@ body,html{
 				}
 			}
 		}
+		.body_box_box{
+			.flex;
+			justify-content: space-between;
+			.border-box;
+			margin: 0 0.24rem;
+			position: relative;
+			.box_boxs{
+				.flex;
+				.border-box;
+				padding: 0.4rem 0;
+				height: 2.333333rem;
+				color: #b8b8b8;
+				font-size: 0.266667rem;
+				line-height: 0.6rem;
+				span{
+					&.job_img{
+						display: inline-block;
+						width: 1.6rem;
+						height: 1.6rem;
+						border-radius: 50%;
+						background: url(../img/job_jj_tou.png) center no-repeat;
+						background-size: contain;
+						margin-right: 0.533333rem;
+						position: relative;
+						&.vip::before{
+							content: '';
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							width: 0.32rem;
+							height: 0.32rem;
+							border: 1px solid #fff;
+							border-radius: 50%;
+							background: url(../img/vip.png) center no-repeat;
+							background-size: contain;
+						}
+					}
+					p{
+
+						font-size: 0.4rem;
+						color: #8c8c8c;
+						line-height: 0.8rem;
+					}
+				}
+			}
+		}
 		.body_box_b,.body_box_bb{
 			.flex(column);
 			.border-box;
@@ -255,8 +429,8 @@ body,html{
 					.border-box;
 					margin: 0 auto;
 					cursor: pointer;
-					width: 100%;
-					height: 0.666667rem;
+					width: 0.506667rem;
+					height: 0.506667rem;
 					background: #fff url(../img/job_v.png) center no-repeat;
 					transform:rotate(180deg);
 					
@@ -389,5 +563,25 @@ body,html{
 		text-align: center;
 		color: #fff;
 		line-height: 1.306667rem;
+		span{
+			display: inline-block;
+			width:0.533333rem;
+			height: 0.4rem;
+			vertical-align: middle;
+			background: url(../img/gt-ico.png) center no-repeat;
+			background-size: contain;
+			animation: myfirst 3s  linear infinite;
+
+		}
 	}
+}
+
+@keyframes myfirst
+{
+	0%   {transform:rotate(0deg) scale(.9,.9);}
+	15%  {transform:rotate(20deg) scale(1,1);}
+	30%  {transform:rotate(0deg) scale(1.3,1.3);}
+	50%  {transform:rotate(-20deg) scale(1,1);}
+	65% {transform:rotate(0deg) scale(.9,.9);}
+	100% {transform:rotate(0deg) scale(.9,.9);}
 }
